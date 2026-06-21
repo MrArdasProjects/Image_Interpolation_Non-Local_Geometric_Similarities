@@ -34,10 +34,48 @@ Natural images are packed with repeating patterns that reappear in entirely diff
 
 Below is the visual parity and quality improvement achieved by this implementation compared to standard bicubic upscaling:
 
-![Visual Comparison Table](./f16_compare.jpg)
+<img width="1200" height="1200" alt="f16_compare" src="https://github.com/user-attachments/assets/0a442da9-1ce5-4e37-9d7d-39e25b7100d6" />
+
 
 ---
+---
 
+## 📂 Folder Structure
+
+Below is the layout of the project directories and files. [cite_start]All executable pipeline scripts are located inside the `code/` folder.
+
+```text
+EEE501_Project/
+[cite_start]├── Project_Report.pdf            # Academic project report [cite: 495]
+[cite_start]├── read_me.txt                   # Original raw readme file [cite: 495]
+│
+[cite_start]├── code/                         # Core Python implementation [cite: 496]
+[cite_start]│   ├── requirements.txt          # Python library dependencies [cite: 497]
+[cite_start]│   ├── benchmark.py              # Multi-image paper benchmark engine [cite: 498]
+[cite_start]│   ├── prepare_paper_dataset.py  # Dataset preparation utility [cite: 499]
+[cite_start]│   ├── stage1_pipeline.py        # HR -> LR -> Bicubic baseline triplet [cite: 499]
+[cite_start]│   ├── stage2_grid_mask.py       # Lattice grid mask split [cite: 500]
+[cite_start]│   ├── stage3_neighbors.py       # Cross/Plus mode neighbor extraction [cite: 501]
+[cite_start]│   ├── stage4_patch_extraction.py# 5-D local patch vectorization [cite: 502]
+[cite_start]│   ├── stage5_patch_matching.py  # Global brute-force similarity search [cite: 502]
+[cite_start]│   ├── stage6_linear_system.py   # Phi and b matrix construction [cite: 503]
+[cite_start]│   ├── stage7_weight_solve.py    # Regularized Least Squares optimizer [cite: 503]
+[cite_start]│   ├── stage8_pixel_reconstruction.py # Single-pixel test demo [cite: 504]
+[cite_start]│   ├── stage9_full_reconstruction.py  # Sequential full image processing [cite: 504]
+[cite_start]│   └── stage10_parallel_benchmark.py # Multi-core accelerated framework [cite: 505]
+│
+[cite_start]├── test_images/                  # Source imagery root [cite: 506]
+[cite_start]│   └── hr/                       # 256x256 and 512x512 ground-truth inputs [cite: 507, 510]
+[cite_start]│       ├── Bike.png              # Case-sensitive testing files [cite: 508, 535]
+│       ├── Lighthouse.png        
+│       ├── einstein.png
+│       ├── butterfly.png
+│       ├── leaves.png
+│       ├── f16.png
+│       ├── goldhill.png
+│       └── lena.png
+│
+[cite_start]└── results/                      # Output directory for generated PNGs and CSV summaries [cite: 512, 513]
 ## 🛠️ 10-Stage Modular Implementation Pipeline
 
 The project is structured into 10 decoupled stages to maintain algorithmic transparency:
