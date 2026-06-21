@@ -236,7 +236,7 @@ This project is licensed under the MIT License.
 <img width="2490" height="1370" alt="Ekran görüntüsü 2026-06-21 183539" src="https://github.com/user-attachments/assets/7a506b44-e5cf-4daf-9b7a-41b65502e27e" />
 <img width="2505" height="1395" alt="Ekran görüntüsü 2026-06-21 183550" src="https://github.com/user-attachments/assets/21561a97-35d3-4410-abbe-9c9c691e21b2" />
 <img width="2510" height="1398" alt="Ekran görüntüsü 2026-06-21 183554" src="https://github.com/user-attachments/assets/05dc668d-f7e1-4bfc-a853-add0e3f0beaa" />
-<img width="2517" height="1410" alt="Ekran görüntüsü 2026-06-21 183559" src="https://github.com/user-attachments/assets/5bb948f7-f058-4869-aea6-b6188bc90803" />
+
 
 
 
