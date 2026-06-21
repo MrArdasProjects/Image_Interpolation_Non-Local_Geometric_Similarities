@@ -1,4 +1,4 @@
-# 🖼️ Image Interpolation Based on Non-Local Geometric Similarities
+<img width="2517" height="1410" alt="Ekran görüntüsü 2026-06-21 183559" src="https://github.com/user-attachments/assets/3728ae5d-5341-4ff5-85f4-302c515b94cd" /># 🖼️ Image Interpolation Based on Non-Local Geometric Similarities
 
 [![Python Version](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -18,6 +18,9 @@ This project implements a non-local image interpolation framework in Python. Ins
 The implementation includes a complete reconstruction pipeline, quantitative evaluation metrics, and a multiprocessing-based acceleration framework for efficient full-image reconstruction.
 
 ---
+
+<img width="1200" height="1200" alt="f16_compare" src="https://github.com/user-attachments/assets/b7d6740a-dbb9-4de9-830a-c1a203650b06" />
+
 
 ## 🎯 Problem Statement
 
@@ -226,3 +229,17 @@ Areas of Interest:
 ## 📄 License
 
 This project is licensed under the MIT License.
+
+<img width="2504" height="1399" alt="Ekran görüntüsü 2026-06-21 183528" src="https://github.com/user-attachments/assets/fefc6a12-5145-4a1c-aba7-a6886606864e" />
+<img width="2497" height="1263" alt="Ekran görüntüsü 2026-06-21 183534" src="https://github.com/user-attachments/assets/474e8e75-d531-485d-9725-63ffc9835bae" />
+<img width="2505" height="1385" alt="Ekran görüntüsü 2026-06-21 183544" src="https://github.com/user-attachments/assets/7ee20a27-011f-4ea3-a567-aea481768339" />
+<img width="2490" height="1370" alt="Ekran görüntüsü 2026-06-21 183539" src="https://github.com/user-attachments/assets/7a506b44-e5cf-4daf-9b7a-41b65502e27e" />
+<img width="2505" height="1395" alt="Ekran görüntüsü 2026-06-21 183550" src="https://github.com/user-attachments/assets/21561a97-35d3-4410-abbe-9c9c691e21b2" />
+<img width="2510" height="1398" alt="Ekran görüntüsü 2026-06-21 183554" src="https://github.com/user-attachments/assets/05dc668d-f7e1-4bfc-a853-add0e3f0beaa" />
+<img width="2517" height="1410" alt="Ekran görüntüsü 2026-06-21 183559" src="https://github.com/user-attachments/assets/5bb948f7-f058-4869-aea6-b6188bc90803" />
+
+
+
+
+
+
