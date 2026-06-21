@@ -1,0 +1,8 @@
+Einstein   | src=Einstein.png   | mode= RGB->L | size=(283, 283)->(283, 283) | SIZE_MISMATCH (283, 283)!=(256, 256)
+Butterfly  | src=butterfly.png  | mode= RGB->L | size=(256, 256)->(256, 256) | no-resize
+Leaves     | MISSING SOURCE MAPPING
+Bike       | MISSING SOURCE MAPPING
+Lena       | src=lena_gray.bmp  | mode=   L->L | size=(512, 512)->(512, 512) | no-resize
+Lighthouse | src=2.gif          | mode=   L->L | size=(512, 512)->(512, 512) | no-resize
+F16        | src=10.gif         | mode=   L->L | size=(512, 512)->(512, 512) | no-resize
+Goldhill   | MISSING SOURCE MAPPING

@@ -1,0 +1,141 @@
+# =============================================================================
+# EEE501 PROJECT — DEPENDENCIES AND RUN GUIDE
+# Non-Local Geometric Similarity Image Interpolation (Python implementation)
+# =============================================================================
+#
+# This file has TWO parts:
+#   (1) Comment block (lines starting with `#`) — environment, dataset, and
+#       run instructions. Ignored by pip.
+#   (2) Package lines at the bottom — installed by:
+#         pip install -r requirements.txt
+#
+# -----------------------------------------------------------------------------
+# 1) PYTHON VERSION
+# -----------------------------------------------------------------------------
+# Required: Python 3.9 – 3.13 (64-bit). Tested on Windows 10/11.
+# Check version:
+#     python --version
+#
+# -----------------------------------------------------------------------------
+# 2) INSTALLATION (Windows, Command Prompt or PowerShell)
+# -----------------------------------------------------------------------------
+# All commands MUST be executed from inside the `code` folder, because the
+# scripts import each other by file name (e.g. `from stage1_pipeline import ...`).
+#
+#   cd path\to\Project_Submission\code
+#
+# (Optional but recommended) Create and activate a virtual environment:
+#   python -m venv .venv
+#   .venv\Scripts\activate
+#
+# Upgrade installer tools, then install dependencies:
+#   python -m pip install --upgrade pip setuptools wheel
+#   pip install -r requirements.txt
+#
+# Internet access to PyPI is required during installation.
+#
+# -----------------------------------------------------------------------------
+# 3) DATASET / INPUT FILES (REQUIRED)
+# -----------------------------------------------------------------------------
+# All scripts are launched from the `code` working directory. Test images
+# are stored at the project root in a sibling folder:
+#
+#     <project_root>\test_images\hr\
+#
+# It must contain the eight benchmark images used in the paper (PNG):
+#
+#     einstein.png
+#     butterfly.png
+#     leaves.png
+#     bike.png
+#     lena.png
+#     lighthouse.png
+#     f16.png
+#     goldhill.png
+#
+# Scripts reference these images using the relative path `../test_images/hr/...`
+# (because the working directory is `code`). A different path can be passed
+# via the `--image` argument.
+#
+# Supported formats: PNG (primary). BMP / JPEG / TIFF also work via OpenCV.
+#
+# -----------------------------------------------------------------------------
+# 4) WHAT EACH PACKAGE IS USED FOR (verified against project source)
+# -----------------------------------------------------------------------------
+# numpy          : numerical arrays, linear algebra (all stage*.py files).
+# opencv-python  : `cv2` — image read, color conversion, bicubic resize
+#                  (stage1_pipeline.py).
+# matplotlib     : figure rendering and `plt.imsave` for saving outputs
+#                  (benchmark.py, stage2/9/10, etc.).
+# scikit-image   : `skimage.metrics.structural_similarity` (SSIM)
+#                  (benchmark.py, stage9_full_reconstruction.py,
+#                   stage10_parallel_benchmark.py).
+# scipy          : transitive scientific stack required by scikit-image.
+# Pillow (PIL)   : `prepare_paper_dataset.py` — image preparation utility.
+#
+# Lines below `# scikit-image dependencies` make the install resilient even
+# when network mirrors strip transitive metadata.
+#
+# Standard library only (NOT listed): argparse, csv, time, dataclasses,
+# pathlib, typing, multiprocessing, os, random, __future__.
+#
+# Frameworks NOT used by this project: PyTorch, TensorFlow, Keras, MATLAB.
+#
+# -----------------------------------------------------------------------------
+# 5) HOW TO RUN — EXAMPLE COMMANDS (from inside `code`)
+# -----------------------------------------------------------------------------
+# Single-image benchmark (CPU intensive, may take minutes per image):
+#   python benchmark.py --image ../test_images/hr/butterfly.png --no_vis
+#
+# Full paper test set:
+#   python benchmark.py --paper_set --no_vis
+#
+# Full reconstruction + metrics for one image:
+#   python stage9_full_reconstruction.py --image ../test_images/hr/butterfly.png --no_vis
+#
+# Faster parallel benchmark (multi-core CPU):
+#   python stage10_parallel_benchmark.py --image ../test_images/hr/butterfly.png --workers auto --no_vis
+#
+# Per-stage demos:
+#   python stage1_pipeline.py  --image ../test_images/hr/butterfly.png
+#   python stage2_grid_mask.py --image ../test_images/hr/butterfly.png
+#   ... up to stage8 ...
+#
+# All scripts support `--help` for the full list of options.
+#
+# -----------------------------------------------------------------------------
+# 6) OUTPUT LOCATION
+# -----------------------------------------------------------------------------
+# By default, results are written under `<project_root>\results\` (i.e.
+# `../results` from the `code` folder). Override with `--outdir` (benchmark)
+# or `--save_output PATH.png` (stage9). Figures may pop up in matplotlib
+# windows; use `--no_vis` where supported to disable display.
+#
+# -----------------------------------------------------------------------------
+# 7) NOTES / ASSUMPTIONS
+# -----------------------------------------------------------------------------
+# - Working directory MUST be `code` so module imports resolve.
+# - No GPU required.
+# - Default paper parameters: N = 60 similar patches, lambda = 0.01.
+# - Pipeline summary: HR -> 2x decimation (no pre-filter) -> LR
+#                          -> bicubic upscale -> proposed reconstruction.
+# - Lower bounds (>=) are used so pip can pick compatible newer versions.
+#   NumPy is capped at <3.0 to avoid future incompatibility breaks.
+#
+# =============================================================================
+# PACKAGE LIST (read by pip)
+# =============================================================================
+
+numpy>=1.21.0,<3.0.0
+opencv-python>=4.5.0
+matplotlib>=3.5.0
+scikit-image>=0.19.0
+scipy>=1.7.0
+Pillow>=9.0.0
+
+# scikit-image dependencies (explicit for reliable installs)
+networkx>=3.0
+imageio>=2.33.0
+tifffile>=2022.8.12
+lazy_loader>=0.3
+packaging>=21.0
