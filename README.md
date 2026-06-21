@@ -1,4 +1,4 @@
-<img width="2517" height="1410" alt="Ekran görüntüsü 2026-06-21 183559" src="https://github.com/user-attachments/assets/3728ae5d-5341-4ff5-85f4-302c515b94cd" /># 🖼️ Image Interpolation Based on Non-Local Geometric Similarities
+🖼️ Image Interpolation Based on Non-Local Geometric Similarities
 
 [![Python Version](https://img.shields.io/badge/python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12%20%7C%203.13-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
