@@ -230,12 +230,13 @@ Areas of Interest:
 
 This project is licensed under the MIT License.
 
-<img width="2504" height="1399" alt="Ekran görüntüsü 2026-06-21 183528" src="https://github.com/user-attachments/assets/fefc6a12-5145-4a1c-aba7-a6886606864e" />
-<img width="2497" height="1263" alt="Ekran görüntüsü 2026-06-21 183534" src="https://github.com/user-attachments/assets/474e8e75-d531-485d-9725-63ffc9835bae" />
-<img width="2505" height="1385" alt="Ekran görüntüsü 2026-06-21 183544" src="https://github.com/user-attachments/assets/7ee20a27-011f-4ea3-a567-aea481768339" />
-<img width="2490" height="1370" alt="Ekran görüntüsü 2026-06-21 183539" src="https://github.com/user-attachments/assets/7a506b44-e5cf-4daf-9b7a-41b65502e27e" />
-<img width="2505" height="1395" alt="Ekran görüntüsü 2026-06-21 183550" src="https://github.com/user-attachments/assets/21561a97-35d3-4410-abbe-9c9c691e21b2" />
-<img width="2510" height="1398" alt="Ekran görüntüsü 2026-06-21 183554" src="https://github.com/user-attachments/assets/05dc668d-f7e1-4bfc-a853-add0e3f0beaa" />
+<img width="2509" height="1338" alt="Ekran görüntüsü 2026-06-21 184055" src="https://github.com/user-attachments/assets/e16b42d8-b16f-44a3-bd59-b9b277098f2b" />
+<img width="2512" height="1346" alt="Ekran görüntüsü 2026-06-21 184101" src="https://github.com/user-attachments/assets/ebc4dfea-d146-4fd7-9eb5-0c7332f70a1e" />
+<img width="2505" height="1346" alt="Ekran görüntüsü 2026-06-21 184107" src="https://github.com/user-attachments/assets/e1b285b4-6187-4839-bd73-852587026d3d" />
+<img width="2502" height="1333" alt="Ekran görüntüsü 2026-06-21 184112" src="https://github.com/user-attachments/assets/6dcf43f0-f732-4338-9de1-f71ba8466bbf" />
+<img width="2500" height="1361" alt="Ekran görüntüsü 2026-06-21 184122" src="https://github.com/user-attachments/assets/2233a084-1be8-460c-9bde-1cf6148edb6f" />
+<img width="2508" height="1360" alt="Ekran görüntüsü 2026-06-21 184130" src="https://github.com/user-attachments/assets/bb2fc224-72eb-4062-9908-aaad3fee8eb6" />
+
 
 
 
